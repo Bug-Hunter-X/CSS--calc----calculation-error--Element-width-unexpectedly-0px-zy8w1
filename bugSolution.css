@@ -1,0 +1,19 @@
+/* bugSolution.css */
+#container {
+  width: 500px; /* Ensure parent has a defined width */
+  background-color: lightgray;
+}
+
+#element {
+  width: calc(100% - 20px);
+  background-color: lightblue;
+  height: 50px;
+}
+
+/* Alternative solution using viewport units (vw):  This avoids dependence on parent's size */
+#element-vw {
+  width: calc(98vw - 20px); /* Use vw instead of % */
+  background-color: lightgreen;
+  height: 50px;
+  margin-top: 20px; 
+} 
